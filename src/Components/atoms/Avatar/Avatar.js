@@ -7,6 +7,7 @@ export default class AntdAvatar extends PureComponent {
   static propTypes = {
     size: PropTypes.oneOf([PropTypes.number, PropTypes.string]),
     icon: PropTypes.string,
+    src: PropTypes.string,
     shape: PropTypes.oneOf(['circle', 'square']),
   }
 
@@ -14,14 +15,15 @@ export default class AntdAvatar extends PureComponent {
     size: 'default',
     icon: '',
     shape: 'circle',
+    src: 'circle',
   }
 
   render() {
     const {
-      size, icon, shape, ...rest
+      size, icon, shape, src, ...rest
     } = this.props;
     return (
-      <Avatar size={size} icon={icon} shape {...rest} />
+      <Avatar src={src} size={size} icon={icon} shape={shape} {...rest} />
     );
   }
 }
