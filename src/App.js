@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppHeader from './Components/organisms/AppHeader';
+import AppBody from './Components/organisms/AppBody';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        hi, I'm Ashmeet Sehgal, My Portfolio Comming Soon...
-      </header>
-    </div>
-  );
+
+// eslint-disable-next-line react/prefer-stateless-function
+class App extends PureComponent {
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <AppHeader />
+          <AppBody />
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;

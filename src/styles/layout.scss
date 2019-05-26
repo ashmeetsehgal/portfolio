@@ -1,0 +1,43 @@
+@mixin flex(
+  $flex-flow: row nowrap,
+  $justify-content: flex-start,
+  $align-items: stretch
+) {
+  display: flex;
+  flex-flow: $flex-flow;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin flex-center {
+  @include flex($justify-content: center, $align-items: center);
+}
+
+@mixin icon-wrapper {
+  line-height: 1;
+}
+
+@mixin margin-horizontal-center {
+  margin: 0 auto !important;
+}
+
+@mixin clearfix($display: table) {
+  &::after {
+    clear: both;
+    content: '';
+    display: $display;
+  }
+}
+
+@mixin thin_hair_line {
+  height: 0.1rem;
+  background-color: gainsboro;
+  display: flex;
+  @content;
+}
+
+@mixin v-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
