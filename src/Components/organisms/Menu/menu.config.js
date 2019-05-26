@@ -12,6 +12,7 @@ export default [
     routeComponent: Home,
     rendererProps: {
       ghost: true,
+      type: 'link',
     },
   },
   {
@@ -22,6 +23,7 @@ export default [
     routeComponent: Resume,
     rendererProps: {
       ghost: true,
+      type: 'link',
     },
   },
   {
@@ -32,6 +34,7 @@ export default [
     routeComponent: Blogs,
     rendererProps: {
       ghost: true,
+      type: 'link',
     },
   },
 ];

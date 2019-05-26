@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
 // import PropTypes from 'prop-types';
 
+import Heading from '../../atoms/Heading';
+
 // eslint-disable-next-line react/prefer-stateless-function
 export default class Resume extends PureComponent {
   // static propTypes = {
@@ -10,7 +12,7 @@ export default class Resume extends PureComponent {
   render() {
     return (
       <div>
-        Resume
+        <Heading>Work in progress</Heading>
       </div>
     );
   }
