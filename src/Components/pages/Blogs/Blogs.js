@@ -12,7 +12,7 @@ export default class Blogs extends PureComponent {
   render() {
     return (
       <div>
-        <Heading>Work in progress</Heading>
+        <Heading>Blogs coming soon...</Heading>
       </div>
     );
   }
