@@ -1,0 +1,17 @@
+@import "../../../styles/index.scss";
+
+.header-wrapper {
+  height: 60px;
+  @include flex($align-items: center);
+  background-color: #8f35e3;
+
+  &-left {
+    width: 70%;
+    @include full-height;
+  }
+
+  &-right {
+    @include full-height;
+    @include flex($align-items: center);
+  }
+}

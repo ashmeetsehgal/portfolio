@@ -1,0 +1,148 @@
+@mixin font-weight($fontw) {
+  font-weight: get-font-weight-option($fontw) !important;
+}
+
+@mixin cursor-pointer {
+  cursor: pointer !important;
+}
+
+@mixin margin-auto {
+  margin: auto;
+}
+
+@mixin full-width {
+  width: 100%;
+}
+
+@mixin full-height {
+  height: 100%;
+}
+
+@mixin half-width {
+  width: 50%;
+}
+
+@mixin half-height {
+  height: 50%;
+}
+
+@mixin is-scrollable {
+  overflow: auto;
+}
+
+@mixin is-marginless {
+  margin: 0 !important;
+}
+
+@mixin is-paddingless {
+  padding: 0 !important;
+}
+
+@mixin is-borderless {
+  border: none !important;
+}
+
+@mixin is-shadowless {
+  box-shadow: none !important;
+}
+
+@mixin size($size) {
+  width: ($size) + rem;
+  height: ($size) + rem;
+}
+
+@mixin color($color) {
+  color: $color !important;
+}
+
+@mixin is-transparent($opacity: 0) {
+  opacity: $opacity !important;
+}
+
+@mixin is-first-letter-capitalized {
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+@mixin box-shadow($borderRadius:0.2rem, $hOffset:0, $vOffset:0.1rem, $blurRadius:0.5rem, $spreadRaidus:0, $color:#cccccc) {
+  box-shadow: $hOffset $vOffset $blurRadius $spreadRaidus $color;
+  border-radius: $borderRadius;
+}
+
+@mixin normal-text-wrap {
+  white-space: normal !important;
+}
+
+@mixin hyphenated {
+  hyphens: auto;
+}
+
+@mixin opacity($density: 1) {
+  opacity: $density;
+}
+
+@mixin transform($property) {
+  transform: $property;
+}
+
+@mixin text-input-styles {
+  border: 1px solid #969AA3;
+  padding: 0px 12px 0px 12px;
+  outline: none;
+  min-height: 32px !important;
+  line-height: 32px !important;
+  font-size: 14px !important;
+}
+
+@mixin text-input-styles-readOnly {
+  border: 1px solid #D4D5D6;
+  background-color: #EDEEF0;
+  outline: none;
+}
+
+@mixin horizontalSeparator($color, $widthProperty: 100%, $heightProperty: 0.1rem) {
+  width: $widthProperty;
+  height: $heightProperty;
+  background-color: $color
+}
+
+@mixin object-fit($objectFit) {
+  object-fit: $objectFit;
+}
+
+@mixin overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+@mixin is-hidden {
+  display: none;
+}
+
+@mixin is-underlined {
+  text-decoration: underline;
+}
+
+@mixin plainButton() {
+  cursor: pointer;
+  background-color: transparent;
+  @include is-paddingless();
+  @include is-borderless();
+  outline: none;
+  line-height: normal;
+}
+
+@mixin text-align ($text-align: center) {
+  text-align: $text-align;
+}
+
+@mixin padding-x-base() {
+  padding: 0 2.4rem;
+}
+
+@mixin ellipsis {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
